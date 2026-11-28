@@ -28,3 +28,5 @@ ef20bfbd29cff95a9d2f7298c785e129db26d78a39fa32bddc4ee1f7111cb4ea
     sha256sum exp106-public-review-2026-11-15.tar.gz
     tar -xzf exp106-public-review-2026-11-15.tar.gz
     sha256sum -c results/sha256sums.txt
+
+Программа статической проверки: admission_check.py (версия 2) проверяет требования R1–R6 по сохраненным конфигурациям из архива и для каждого нарушения выводит причину, минимальный контрпример и требуемое изменение конфигурации. Запуск: python3 admission_check.py <путь к распакованному архиву>. Полный вывод для конфигураций K1–K6, M0–M8 и X1–X4 — в admission_check_output.txt.
